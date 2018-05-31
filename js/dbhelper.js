@@ -6,7 +6,7 @@ class DBHelper {
      */
     static get DATABASE_URL() {
         const port = 8000 // Change this to your server port
-        return `https://tsiougr.github.io/restaurant/data/restaurants.json`;
+        return `https://tsiougr.github.io/mws-restaurant-stage-1/data/restaurants.json`;
     }
 
     /**
