@@ -180,7 +180,7 @@ nav h1 a {
 #restaurants-list {
     background-color: #f3f3f3;
     list-style: outside none none;
-    margin: 0;
+    margin: auto;
     padding: 0;
 }
 
