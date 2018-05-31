@@ -1,12 +1,3 @@
-/**
- * Common database helper functions.
- */
-if(navigator.serviceWorker) {
-    navigator.serviceWorker.register('./service-worker.js')
-        .then(reg => console.log('ServiceWorker Working'))
-        .catch(err => console.error(err))
-}
-
 class DBHelper {
     
     /**
