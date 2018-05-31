@@ -2,7 +2,7 @@
 
 
 This project is part of the Udacity Google front-end developer NanoDegree Scholarschip.
-The goal is to rebuild the given project an make it mobile friendly, add in a serviceworker for offline rendering and make it a11y ready.
+The goal is to rebuild the given project and make the provided site fully responsive, make the site accessible and cache the static site for offline use.
 
 # Installation
 
