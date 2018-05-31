@@ -1,53 +1,67 @@
 <!DOCTYPE html>
-<html lang="eng">
 
+<html class="no-js" lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="theme-color">
+    <meta content="A review app for restaurant" name="description">
+    <meta content="Pascal Meers" name="author">
+    <link rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/styles-md.css" media="(min-width: 768px)"  rel="stylesheet">
+    <link href="css/styles-lg.css" media="(min-width: 1024px)"  rel="stylesheet">
+    <link href="css/styles-xl.css" media="(min-width: 1366px)"  rel="stylesheet">
+
     <title>Restaurant Reviews</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <h1>
-        <a href="/">Restaurant Reviews</a>
-      </h1>
+    <header aria-label="Page Top Header">
+        <nav aria-label="Navigation">
+            <h1><a href="/">Restaurant Reviews</a>
+            </h1>
         </nav>
     </header>
 
-    <main id="maincontent">
+
+    <main aria-label="Page Main Content" id="maincontent">
         <section id="map-container">
-            <div id="map"></div>
+            <div id="map" title="Google Maps" role="application">
+            </div>
         </section>
-        <section>
+
+
+        <section id="review-container">
             <div class="filter-options">
                 <h2>Filter Results</h2>
-                <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
-                    <option value="all">All Neighborhoods</option>
+                <select aria-label="All Neighborhoods" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+                    <option value="all">
+                        All Neighborhoods
+                    </option>
+                </select> <select aria-label="All Cuisines" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+                    <option value="all">
+                        All Cuisines
+                    </option>
                 </select>
-                <label for="neighborhoods-select">neighborhoods-select</label>
-                <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
-                    <option value="all">All Cuisines</option>
-                </select>
-                <label for="cuisines-select">cuisines-select</label>
             </div>
-            <ul id="restaurants-list"></ul>
+
+
+            <ul id="restaurants-list">
+            </ul>
         </section>
     </main>
 
-    <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
-    <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5bWcrbAiqpEi3q3GVgbkOYN3E8vQHKzQ&libraries=places&callback=initMap"></script>
 
-    <footer id="footer">
-        Copyright (c) 2017
-        <a href="/">
-            <strong>Restaurant Reviews</strong>
-        </a> All Rights Reserved.
+    <footer aria-label="Page Footer" id="footer">
+        Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
     </footer>
-
+    <script src="js/dbhelper.js">
+    </script>
+    <script src="js/main.js">
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5bWcrbAiqpEi3q3GVgbkOYN3E8vQHKzQ&libraries=places&callback=initMap">
+    </script>
 </body>
-
 </html>
