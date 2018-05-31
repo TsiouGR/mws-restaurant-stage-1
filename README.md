@@ -1,7 +1,8 @@
 # Restaurant review app
 
 
-This project is part of the Udacity Google front-end developer NanoDegree Scholarschip. The goal is to rebuild the given project an make it mobile friendly, add in a serviceworker for offline rendering and make it a11y ready.
+This project is part of the Udacity Google front-end developer NanoDegree Scholarschip.
+The goal is to rebuild the given project an make it mobile friendly, add in a serviceworker for offline rendering and make it a11y ready.
 
 # Installation
 
@@ -11,7 +12,7 @@ clone or download the project
 cd into the root folder
 `cd restaurant-review`
 
-open the project in your editor and navigate to `js/dbhelper.js` on `line18`
+open the project in your editor and navigate to `js/dbhelper.js` on `line9`
 change the location to `http://localhost:${port}` leave the `/data/restaurants.json` as is.
 
 Start a simple server **note** - **for this server you need to have python installed**
